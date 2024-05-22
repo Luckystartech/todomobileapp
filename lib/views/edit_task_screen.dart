@@ -29,7 +29,11 @@ class EditTodoTaskForm extends ConsumerWidget {
       appBar: AppBar(
         elevation: 3,
         backgroundColor: AppStyle.primaryColor,
-        leading: const Icon(Icons.menu, color: Colors.white,),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          color: Colors.white,
+          onPressed: ()=>Navigator.pop(context),
+        ),
         title: const Center(
             child: Text(
           'Edit Todo Task',

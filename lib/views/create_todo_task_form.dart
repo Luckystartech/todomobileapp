@@ -19,23 +19,27 @@ class CreateTodoTaskForm extends ConsumerWidget {
       appBar: AppBar(
         elevation: 3,
         backgroundColor: AppStyle.primaryColor,
-        leading: const Icon(Icons.menu, color: Colors.white,),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          color: Colors.white,
+          onPressed: ()=>Navigator.pop(context),
+        ),
         title: const Center(
             child: Text(
           'Add Todo Task',
           style: AppStyle.heading1White,
         )),
         actions: [
-            Padding(
-              padding: const EdgeInsets.only(right: 20.0),
-              child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Image.asset(
-                    'assets/profile.png',
-                    width: 30,
-                  )),
-            )
-          ],
+          Padding(
+            padding: const EdgeInsets.only(right: 20.0),
+            child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Image.asset(
+                  'assets/profile.png',
+                  width: 30,
+                )),
+          )
+        ],
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -127,7 +131,8 @@ class CreateTodoTaskForm extends ConsumerWidget {
                   descriptionController.clear();
 
                   Navigator.pop(context);
-                }, buttontext: 'Create a New Task',
+                },
+                buttontext: 'Create a New Task',
               )
             ],
           ),
