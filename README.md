@@ -18,11 +18,18 @@ TodoApp is a mobile application developed using Flutter, designed to help users 
 - **Firebase Firestore**: For backend database.
 - **Firebase Authentication**: For user authentication.
 
+## Screenshots
+
+- ![screenshot 1](images/screen_1.png)
+- ![screenshot 2](images/screen_2.png)
+- ![screenshot 3](images/screen_3.png)
+- ![screenshot 4](images/screen_4.png)
+
 ## Installation
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/todoapp.git
+    git clone https://github.com/Luckystartech/todomobileapp.git
     cd todoapp
     ```
 
@@ -75,4 +82,4 @@ Copy code
 
 ## Contact
 
-If you have any questions or suggestions, feel free to reach out to me at **luckyekpebe123@gmail.com**.
+If you have any questions or suggestions, feel free to reach out to me at [gmail](luckyekpebe123@gmail.com).
